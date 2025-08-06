@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Form></Form></title>
+</head>
+<body>
+    <header>
+        <big>
+            <h1>
+                <a href="index.html">TRAVEL PLANNING</a>
+            </h1>
+        </big>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="destinations.html">Destination</a></li>-->
+            <li><a href="packages.html">Packages</a></li>
+            <!--<li><a href="form.html">Form</a></li>-->
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </header>
+    <hr>
+    <main>
+        <form action="3" method="post">
+            <section>
+                <div>
+                    <big>
+                        <h2>Fill the Form</h2>
+                    </big>
+
+                </div>
+                <div>
+                    <label for="fullname"></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+                </div>
+                <div>
+                    <label for="destination"></label><br>
+                    <select name="destination" id="destination">
+                        <option value="default">select your Destination</option>
+                        <option value="dubai">dubai</option>
+                        <option value="Agra">Agra</option>
+                        <option value="china">china</option>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="people"></label><br>
+                    <select name="no of people" id="people">
+                        <option value="default">select no. of people</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="other">other</option>
+                    </select><br>
+                    <label for="other"></label>
+                    <input type="text" name="other" id="other" placeholder="if other" ><br><br>
+                </div>
+                <div>
+                    <label for="date">Enter the date of travel:</label><br>
+                    <input type="date" id="date" name="date" required><br><br>
+                </div>
+                <div>
+                    <label for="message">Enter your message here:</label><br>
+                    <textarea name="message" id="message" rows="5" cols="30" placeholder="Enter your message..." maxlength="200" ></textarea>
+                </div>
+                <div>
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </div>
+            </section>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <i>Thank you for choosing Travel Planning!!!</i>
+        </div>
+    </footer>
+</body>
+</html>
